@@ -19,6 +19,7 @@ snacks = [
   selectSnack = null
 
   money = 0
+  
 }
 
 

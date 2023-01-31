@@ -13,7 +13,7 @@ get ListTemplate() {
     return `
     <div class='products '>
     <h1> ${this.name} $${this.price}0 
-    <button class="shadow-lg" onclick="app.snackController.selectSnack('${this.name}')"> ${this.emoji} </button> 
+    <button class="shadow-lg" onclick="app.SnackController.buySnack('${this.name}')"> ${this.emoji} </button> 
     </h1> 
     </div>
     `

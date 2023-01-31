@@ -15,16 +15,11 @@ function drawSnacks(){
 function drawMoney() {
     let money = appState.money
     let template = ''
-    for (let i = 0; i < money; i++) {
     template += `
-    <div fs-1">
-    <h1>
-    You have $
-    ${appState.money}
-    </h1>
-    </div>
+    <div fs-1"><h1>
+    You have $${appState.money}
+    </h1></div>
     `
-    }
     setHTML('money', template)
 }
 
@@ -38,15 +33,19 @@ appState.on('money', drawMoney)
 
     // SECTION  public functions
 
-    selectSnack(name){
-    console.log('active snack ran')
-    snacksService.selectSnack(name)
+    selectSnack(name, price){
+    // console.log('active snack ran')
+    snacksService.selectSnack(name, price)
     }
 
     getMoney() {
         snacksService.getMoney()
 }
-        
+
+buySnack(name){
+snacksService.buySnack(name)
+}
+
     dispenseSnack(){
 
     }
