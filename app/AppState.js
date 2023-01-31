@@ -17,6 +17,8 @@ snacks = [
 
   /** @type {import('./Models/Snack').Snack|null} */
   selectSnack = null
+
+  money = 0
 }
 
 

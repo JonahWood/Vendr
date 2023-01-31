@@ -2,11 +2,18 @@ import { appState } from "../AppState.js";
 
 class SnacksService {
 
-selectSnack() {
+selectSnack(name) {
     console.log('set active snack ran');
-    appState.selectSnack = foundSnack
+    let found = appState.snacks.find(s => s.name == name)
+    console.log(found)
+    return found
+}
+
+getMoney() {
+    appState.money += 1
+    console.log(appState.money)
 }
 
 }
 
-export const snacksService = SnacksService
+export const snacksService = new SnacksService()
