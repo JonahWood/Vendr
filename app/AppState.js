@@ -10,13 +10,13 @@ class AppState extends EventEmitter {
 
   /** @type {import('./Models/Snack').Snack[]} */
 snacks = [
-  new Snack('candy', 1.50,'logo.png'),
-  new Snack('chips', 2.50, 'logo.png'), 
-  new Snack('soda', 3.50, 'logo.png'),
+  new Snack('candy', 1.50,'🍭'),
+  new Snack('chips', 2.50, '🥔'), 
+  new Snack('soda', 3.50, '🥤'),
 ]
 
   /** @type {import('./Models/Snack').Snack|null} */
-  activeSnack = null
+  selectSnack = null
 }
 
 

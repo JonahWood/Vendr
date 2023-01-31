@@ -19,8 +19,8 @@ drawSnacks()
 
     // SECTION  public functions
 
-    setActiveSnack(name){
+    selectSnack(name){
         console.log('active snack ran', + name)
-    snacksService.setActiveSnack()
+    snacksService.selectSnack()
     }
 }

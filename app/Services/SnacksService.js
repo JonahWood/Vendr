@@ -1,8 +1,10 @@
+import { appState } from "../AppState.js";
+
 class SnacksService {
 
-setActiveSnack() {
-    
+selectSnack() {
     console.log('set active snack ran');
+    appState.selectSnack = foundSnack
 }
 
 }

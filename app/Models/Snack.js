@@ -2,16 +2,16 @@
 
 
 export class Snack {
-    constructor(name, price, img) {
+    constructor(name, price, emoji) {
     this.name = name
     this.price = price
-    this.imgUrl = img
+    this.emoji = emoji
 }
 
 
 get ListTemplate() {
     return `
-    <div onclick='app.snackController.setActiveSnack()'> ${this.name} </div>
+    <div onclick='app.snackController.selectSnack()' class='products'> <h1> ${this.name} ${this.price} ${this.emoji} </h1> </div>
     `
 }
 
